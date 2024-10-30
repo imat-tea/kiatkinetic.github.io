@@ -7,46 +7,74 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">KIAT KINETIC INDUSTRIES</div>
+    <div class="logo">KIAT KINETIC</div>
     <nav>
       <ul>
-        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#home">Beranda</a></li>
         <li><a href="#products">Produk</a></li>
         <li><a href="#services">Layanan</a></li>
-        <li><a href="#contact">contact</a></li>
+        <li><a href="#contact">Kontak</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero-slider">
-    <img src="images/header.jpg" alt="Hero Off-Road" />
-    <div class="overlay">
-      <h1>Solusi Terbaik untuk Off-Road dan Otomotif</h1>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Solusi Terbaik untuk Off-Road & Otomotif</h1>
+      <p>Kami menyediakan produk dan layanan untuk meningkatkan performa kendaraan Anda.</p>
       <a href="#products" class="cta-button">Lihat Produk</a>
     </div>
   </section>
 
-  <section id="products" class="product-grid">
-    <h2>Produk Unggulan Kami</h2>
+  <!-- Produk Section -->
+  <section id="products" class="section">
+    <h2>Produk Kami</h2>
     <div class="grid-container">
       <div class="grid-item">
         <img src="images/produk1.jpg" alt="Produk 1">
-        <h3>Suspensi Off-Road</h3>
+        <h3>Sistem Suspensi</h3>
+        <button class="buy-button">Beli Sekarang</button>
       </div>
       <div class="grid-item">
         <img src="images/produk2.jpg" alt="Produk 2">
-        <h3>Velg dan Ban 4x4</h3>
+        <h3>Velg dan Ban</h3>
+        <button class="buy-button">Beli Sekarang</button>
       </div>
       <div class="grid-item">
         <img src="images/produk3.jpg" alt="Produk 3">
-        <h3>Aksesoris Kendaraan</h3>
+        <h3>Aksesoris Off-Road</h3>
+        <button class="buy-button">Beli Sekarang</button>
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2024 KIAT KINETIC INDUSTRIES | All Rights Reserved</p>
+  <!-- Layanan Section -->
+  <section id="services" class="section">
+    <h2>Layanan Kami</h2>
+    <p>Kami melayani modifikasi dan peningkatan performa kendaraan off-road Anda.</p>
+    <a href="#contact" class="cta-button">Hubungi Kami</a>
+  </section>
+
+  <!-- Kontak / Footer Section -->
+  <footer id="contact">
+    <h2>Kontak Kami</h2>
+    <p>Email: info@kiatkinetic.com | Telp: +62-xxx-xxx</p>
+    <p>&copy; 2024 KIAT KINETIC INDUSTRIES</p>
   </footer>
+
+  <!-- Smooth Scroll JavaScript -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
