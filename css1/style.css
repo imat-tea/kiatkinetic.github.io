@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f0f0f5;
   color: #333;
 }
 
@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1a1a1a;
+  background-color: #004080;
   padding: 15px 30px;
   position: sticky;
   top: 0;
@@ -24,7 +24,7 @@ body {
 }
 
 .navbar .logo {
-  color: #f39c12;
+  color: #fff;
   font-size: 24px;
   font-weight: bold;
 }
@@ -44,61 +44,41 @@ body {
   font-size: 18px;
 }
 
-.navbar ul li a.active,
 .navbar ul li a:hover {
-  color: #f39c12;
+  color: #ffcc00;
 }
 
-/* Hero Slider */
-.hero-slider {
-  position: relative;
-  width: 100%;
+/* Hero Section */
+.hero {
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+  background-position: center;
   height: 80vh;
-  background-color: #000;
-}
-
-.hero-slider img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-slider .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: white;
 }
 
-.hero-slider h1 {
+.hero-content h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .cta-button {
-  background-color: #f39c12;
-  color: white;
+  background-color: #ffcc00;
+  color: #004080;
   padding: 10px 20px;
   text-decoration: none;
-  font-size: 1rem;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
-.cta-button:hover {
-  background-color: #d35400;
-}
-
-/* Product Grid */
-.product-grid {
+/* Produk Section */
+.section {
+  padding: 50px;
   text-align: center;
-  padding: 50px 20px;
-}
-
-.product-grid h2 {
-  margin-bottom: 30px;
 }
 
 .grid-container {
@@ -124,36 +104,23 @@ body {
   border-radius: 8px;
 }
 
+.buy-button {
+  background-color: #004080;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #ffcc00;
+  color: #004080;
+}
+
 /* Footer */
 footer {
-  background-color: #1a1a1a;
+  background-color: #004080;
   color: white;
-  text-align: center;
-  padding: 15px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-.gallery {
-  text-align: center;
-  margin: 50px 0;
-}
-
-.gallery-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.gallery-grid img {
-  width: 300px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.05);
+  padding: 20px;
 }
